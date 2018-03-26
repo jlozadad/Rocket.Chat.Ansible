@@ -23,3 +23,9 @@
     service:
       name: rocketchat
       state: restarted
+
+  - name: Ensure APT cache has been updated recently
+    apt:
+      update_cache: yes
+      #cache_valid_time: 3600
+    when: ansible_pkg_mgr == "apt"
