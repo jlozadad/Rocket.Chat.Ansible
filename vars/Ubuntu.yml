@@ -8,6 +8,7 @@ rocket_chat_dep_packages:
   - wget
   - cron
   - gnupg2
+  - acl
 
 rocket_chat_mongodb_packages:
   - mongodb-org-server
